@@ -1,0 +1,25 @@
+{
+  "tests": [
+
+    {
+      "name": "TestGPTree Runs",
+      "setup": "javac TestGPTree.java",
+      "run": "java TestGPTree",
+      "input": "",
+      "output": "After crossover",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Test Collect",
+      "setup": "javac TestCollect.java",
+      "run": "java TestCollect",
+      "input": "",
+      "output": "Collect has all binops!",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
