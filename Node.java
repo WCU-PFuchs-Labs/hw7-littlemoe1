@@ -1,36 +1,8 @@
 public abstract class Node {
 
 
-    private Node lChild, rChild;
-    private Op op;
-
-    // Constructor for binary operation
-    public Node(Binop op, Node lChild, Node rChild) {
-        this.op = op;
-        this.lChild = lChild;
-        this.rChild = rChild;
-    }
-
-    // Constructor for unary operation (Const or Variable)
-    public Node(Unop op) {
-        this.op = op;
-        this.lChild = null;
-        this.rChild = null;
-    }
-
-    public double eval(double[] values) {
-        return op.eval(lChild, rChild, values);
-    }
-
-    public String toString() {
-        if (op instanceof Binop) {
-            return op.toString(lChild, rChild);
-        } else if (op instanceof Unop) {
-            return op.toString();
-        } else {
-            return "";
-        }
-    }
+    
+    
     public abstract double eval(double[] data);
     public abstract String toString();
 
