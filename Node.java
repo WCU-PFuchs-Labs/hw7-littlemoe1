@@ -1,6 +1,7 @@
 public abstract class Node {
 
-
+    Node lChild;
+    Node rChild;
     
     
     public abstract double eval(double[] data);
