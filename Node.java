@@ -44,7 +44,6 @@ public abstract class Node {
      * return true if operation is a Unop (leaf)
      */
     public boolean isLeaf() {
-        // if it has no children, it’s a leaf
         return (lChild == null && rChild == null);
     }
 }
